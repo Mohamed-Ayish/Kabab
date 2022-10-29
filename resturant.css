@@ -1,0 +1,904 @@
+html {
+    font-size: 10px;
+}
+
+:root {
+    --gray: #1F1534;
+    --black: #233348;
+    --white: #FFFFFF;
+    --red: #EA0000;
+    --ramd: #2A333E;
+    --shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.card {
+    width: 28%;
+    background: var(--white);
+    margin: 34px 34px 37px 34px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-weight: 800;
+    line-height: 10rem;
+    letter-spacing: -0.08em;
+    color: var(--red);
+}
+
+h3 {
+    font-weight: 700;
+    line-height: 3.4rem;
+    color: var(--ramd);
+
+}
+
+h5 {
+    font-weight: 500;
+    line-height: 3.4rem;
+    color: var(--ramd);
+}
+
+p {
+    font-weight: 500;
+    line-height: 3.1rem;
+    color: var(--gray);
+}
+
+header {
+    margin-top: 6.3rem;
+    margin-bottom: 10rem;
+}
+
+header .container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 4.2rem;
+    color: var(--ramd);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+header .container nav {
+    position: relative;
+}
+
+header .container nav ul::before {
+    /* content: " "; */
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    left: 5%;
+    top: 100%;
+    background-color: var(--red);
+}
+
+header .container .icons {
+    margin-right: 9rem;
+}
+
+header .container .icons img {
+    margin-left: 3rem;
+}
+
+@media screen and (max-width : 600px) {
+    header .container {
+        display: block;
+    }
+
+    header .container .logo {
+        text-align: center;
+    }
+
+    header .container ul {
+        display: block;
+    }
+
+    header .container ul li {
+        width: 100%;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    header .container .icons {
+        text-align: right;
+        margin-top: 2rem;
+    }
+}
+
+#heading {
+    margin-bottom: 10rem;
+    background-image: url(../Resturant/image/Pagination.png);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: 5%;
+}
+
+#heading .container .image {
+    width: 45%;
+}
+
+#heading .container img {
+    width: 5%;
+}
+
+#heading .container .image img {
+    width: 100%;
+}
+
+#heading .container .content {
+    width: 50%;
+}
+
+#heading .container .content h4 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+#heading .container .content h1 {
+    font-weight: 800;
+    font-size: 18.2rem;
+    line-height: 10rem;
+    letter-spacing: -0.08em;
+    color: var(--red);
+    margin: 4.3rem 0rem 4.1rem 0rem;
+    font-family: 'Abhaya Libre ExtraBold';
+
+}
+
+#heading .container .content p {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.1rem;
+    margin-bottom: 8.7rem;
+    color: var(--gray);
+}
+
+#heading .container .content .butns img {
+    width: 50%;
+}
+
+#heading .container .content .times {
+    justify-content: space-around;
+}
+
+#heading .container .content .times h3 {
+    font-size: 2.6rem;
+}
+
+#heading .container .content .times h5 {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+@media screen and (max-width : 600px) {
+    #heading {
+        background-position-y: 15%;
+        background-position-x: -10%;
+    }
+
+    #heading .container {
+        display: block;
+    }
+
+    #heading .container .content h1 {
+        font-size: 9rem
+    }
+
+    #heading .container .content,
+    #heading .container .image {
+        width: 100%;
+    }
+}
+
+#product {
+    margin-bottom: 10rem;
+    background-image: url(../Resturant/image/image\ 35.png);
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+}
+
+#product .container .head {
+    text-align: center;
+}
+
+#product .container .head h2 {
+    font-size: 8rem;
+}
+
+#product .container .head h3 {
+    font-size: 2rem;
+    line-height: 0px;
+}
+
+#product .container .product-countries .btn {
+    border-radius: 24% 76% 6% 94% / 100% 2% 98% 0%;
+    background-color: var(--red);
+    box-shadow: var(--shadow);
+    border: transparent;
+    color: var(--white);
+    padding: 1.6rem 4rem;
+}
+
+#product .container .product-countries {
+    margin-top: 10rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#product .container .product-countries .images img {
+    border-radius: 50%;
+}
+
+#product .container .product-countries .star {
+    margin: 3.7rem 0rem 2.5rem 0rem;
+}
+
+#product .container .product-countries h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.2rem;
+}
+
+#product .container .product-countries h3 {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    margin-bottom: 4.4rem;
+}
+
+@media screen and (max-width : 600px) {
+    #product .container .product-countries {
+        display: block;
+    }
+
+    #product .container .product-countries .pr {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+}
+
+#delivery {
+    margin-bottom: 10rem;
+}
+
+#delivery .container {
+    justify-content: space-between;
+}
+
+#delivery .container .left {
+    width: 40%;
+    justify-content: space-around;
+}
+
+#delivery .container .left .drinks {
+    margin: 0 auto;
+    align-items: center;
+    background-color: red;
+    width: 75%;
+    padding: 1rem 10rem 1rem 1rem;
+    border-radius: 0% 100% 20% 80% / 100% 2% 100% 0%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: var(--shadow);
+}
+
+#delivery .container .left .drinks .image {
+    padding: 3px 3px 1px 3px;
+    background-color: white;
+    border-radius: 15%;
+    margin-right: 2.3rem;
+}
+
+#delivery .container .left .drinks .word h5 {
+    font-weight: 600;
+    font-size: 14.61px;
+    color: #FFFFFF;
+}
+
+#delivery .container .left .eating {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#delivery .container .left ul {
+    padding: 40px 10px 0px;
+}
+
+#delivery .container .left .eating li {
+
+    padding: 1.5rem 0rem;
+}
+
+#delivery .container .left .eating li h5 {
+    font-size: 14.61px;
+    color: #2A333E;
+    opacity: 0.5;
+}
+
+#delivery .container .left ul li img {
+    border-radius: 50%;
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+#delivery .container .right {
+    position: relative;
+    width: 60%;
+    background: #ff80801f;
+    border-radius: 30.4376px;
+    padding: 8.5rem 0rem 0px 7.3rem;
+}
+
+#delivery .container .right .faster {
+    position: relative;
+    background-color: #FFDAD7;
+    border: 1.2175px solid #FCC7C3;
+    border-radius: 60.8751px;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+
+}
+
+#delivery .container .right .faster::before {
+    content: url(../Resturant/image/Group\ \(1\).png);
+    position: absolute;
+    top: -220%;
+    right: 100%;
+}
+
+#delivery .container .right h2 {
+    font-size: 60px;
+    line-height: 62px;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+#delivery .container .right p {
+    position: relative;
+    width: 60%;
+    font-size: 14.61px;
+    margin-bottom: 3rem;
+}
+
+#delivery .container .right button {
+    background-color: var(--ramd);
+    color: var(--white);
+    width: 30%;
+    padding: 2rem;
+    border-radius: 0% 100% 20% 80% / 100% 2% 100% 0%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: var(--shadow);
+    margin-bottom: 6rem;
+}
+
+#delivery .container .right::after {
+    content: url(../Resturant/image/Decor-removebg-preview.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+}
+
+#delivery .container .right::before {
+    content: url(../Resturant/image/image\ 34.png);
+    position: absolute;
+    left: 60%;
+    top: -3%;
+}
+
+#delivery .container .right p::after {
+    content: url(../Resturant/image/Coffee_Cup__1_-removebg-preview.png);
+    position: absolute;
+    left: 80%;
+    top: 0%;
+}
+
+@media screen and (max-width : 600px) {
+    #delivery .container {
+        flex-direction: column;
+    }
+
+    #delivery .container .left {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #delivery .container .right {
+        width: 100%;
+    }
+
+    #delivery .container .right .faster {
+        width: 80%;
+    }
+
+    #delivery .container .right h2 {
+        font-size: 30px;
+    }
+
+    #delivery .container .right button {
+        width: 50%;
+    }
+
+    #delivery .container .right p::after {
+        content: "";
+    }
+}
+
+#amazing {
+    margin-bottom: 10rem;
+    background-image: url(../Resturant/image/Decore.png);
+    background-repeat: no-repeat;
+}
+
+#amazing .container {
+    position: relative;
+}
+
+#amazing .container::after {
+    content: url(../Resturant/image/image\ 34.png);
+    position: absolute;
+    left: 95%;
+    bottom: 45%;
+}
+
+#amazing .head {
+    text-align: center;
+}
+
+#amazing h3 {
+    font-size: 2rem;
+}
+
+#amazing .head h2 {
+    font-size: 8rem;
+}
+
+#amazing .meals .card .images {
+    text-align: center;
+}
+
+#amazing .meals {
+    flex-wrap: wrap;
+}
+
+#amazing .card {
+    background: #FFFFFF;
+    border: 1.2px solid #EFEFEF;
+    border-radius: 24px;
+    width: 27%;
+    padding: 2rem;
+}
+
+#amazing p {
+    font-size: 1.6rem;
+}
+
+#amazing .container .meals .images img {
+    border-radius: 50%;
+}
+
+#amazing .container .meals .price {
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#amazing .container .meals .price h5 {
+    font-size: 2rem;
+}
+
+#amazing .container .menu {
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    background-color: red;
+    width: 20%;
+    padding: 1rem 0;
+    border-radius: 0% 100% 20% 80% / 100% 2% 100% 0%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: var(--shadow);
+}
+
+#amazing .container .menu h5 {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+#amazing .container .menu .image {
+    padding: 1rem;
+    box-shadow: 0px 10px 20px rgba(185, 66, 42, 0.19);
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media screen and (max-width : 600px) {
+    #amazing .meals {
+        flex-direction: column;
+    }
+
+    #amazing .head h2 {
+        font-size: 4rem;
+    }
+
+    #amazing .card {
+        width: 100%;
+
+    }
+
+    #amazing .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #amazing .container .menu {
+        width: 50%;
+    }
+
+    #amazing .container::after {
+        content: "";
+    }
+}
+
+#download {
+    background-color: #ff80801f;
+    margin-bottom: 10rem;
+}
+
+#download .mobile {
+    position: relative;
+}
+
+#download .mobile::after {
+    content: url(../Resturant/image/Decore1.png);
+    position: absolute;
+    top: 78%;
+}
+
+#download .container {
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#download .container .content {
+    width: 40%;
+}
+
+#download .container .content h3 {
+    font-size: 2rem;
+}
+
+#download .container .content h2 {
+    font-size: 6.2rem;
+    line-height: 6rem;
+    width: 65%;
+    margin: 1rem 0 2rem 0;
+}
+
+#download .container .content p {
+    font-size: 1.7rem;
+}
+
+#download .butons {
+    width: 90%;
+    justify-content: space-between;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+#download .content .butons .btn {
+    background: var(--ramd);
+    width: 40%;
+    text-align: center;
+    justify-content: space-around;
+    padding: 30px 0 10px 0;
+    border-radius: 10px;
+}
+
+#download .content .butons .btn h5 {
+    color: white;
+    line-height: 0px;
+}
+
+#download .content .butons .btn h3 {
+    color: white;
+}
+
+@media screen and (max-width : 600px) {
+    #download {
+        width: 95%;
+        margin: 10rem auto;
+    }
+
+    #download .container {
+        flex-direction: column;
+        width: 95%;
+        margin: 10rem auto;
+    }
+
+    #download .container .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #download .container .content h2 {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    #download .content .butons {
+        width: 100%;
+    }
+
+    #download .content .butons .btn {
+        width: 100%;
+        margin-left: 5px;
+    }
+}
+
+#testimonial {
+    margin-bottom: 10rem;
+}
+
+#testimonial .container .head {
+    text-align: center;
+}
+
+#testimonial .container .head h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#testimonial .container .head h2 {
+    position: relative;
+    font-size: 6.2rem;
+    line-height: 6rem;
+}
+
+#testimonial .container .head h2::after {
+    content: url(../Resturant/image/Shape.png);
+    position: absolute;
+    right: 32%;
+    top: 70%;
+}
+
+#testimonial .container .person {
+    margin-top: 10rem;
+}
+
+#testimonial .container .person .natasha,
+.shakir {
+    width: 50%;
+}
+
+#testimonial .container .person .content {
+    margin-left: 2.5rem;
+}
+
+#testimonial .container .person .natasha .content h3,
+h5,
+p,
+img {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin-bottom: .8rem;
+}
+
+#testimonial .container .person .natasha .content p {
+    width: 80%;
+}
+
+@media screen and (max-width : 600px) {
+
+    #testimonial .container .person {
+        flex-direction: column;
+    }
+
+    #testimonial .container .person .natasha,
+    .shakir {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    #testimonial .container .person .content p {
+        width: 100%;
+    }
+
+    #testimonial .container .head h2::after {
+        content: url(../Resturant/image/Shape.png);
+        position: absolute;
+        right: 0%;
+        top: 70%;
+    }
+}
+
+footer {
+    height: 70vh;
+    background-color: var(--ramd);
+    position: relative;
+
+}
+
+footer .container {
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+
+}
+
+footer .container .logos {
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+footer .container h3 {
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+footer .container li {
+    list-style: none;
+    display: flex;
+    color: var(--white);
+    padding: 2rem;
+}
+
+footer .container li img {
+    margin-right: 2.5rem;
+}
+
+footer .discount {
+    width: 888px;
+
+    background: #FFFFFF;
+    border: 1px solid #EA0000;
+    border-radius: 4.7rem;
+    text-align: center;
+
+}
+
+footer .discount {
+    position: absolute;
+    left: 25%;
+    top: -20%;
+
+}
+
+footer .discount .head {
+    margin-top: 3rem;
+}
+
+footer .discount h3 {
+    position: relative;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color: var(--ramd);
+    margin-bottom: 3.4rem;
+
+}
+
+footer .discount h3::after {
+    content: url(../Resturant/image/Shape.png);
+    position: absolute;
+    right: 30%;
+    top: 80%;
+}
+
+footer .discount p {
+    font-size: 12px;
+    line-height: 19px;
+    color: var(--ramd);
+    margin-bottom: 2.5rem;
+}
+
+footer .discount .mail {
+    border: 1px solid #EA0000;
+    border-radius: 47rem;
+    width: 50%;
+    margin: 3rem auto;
+    padding: 5px;
+}
+
+footer .discount .mail li {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+footer .discount .mail li button {
+    color: var(--white);
+    background: #EA0000;
+    padding: 1rem 2rem;
+    border: transparent;
+    border-radius: 4.7rem;
+}
+
+@media screen and (max-width : 600px) {
+    footer {
+        width: 90%;
+        margin: 5rem auto;
+        height: 100vh;
+        position: relative;
+
+    }
+
+    footer .container {
+
+        flex-wrap: wrap;
+
+    }
+
+    footer .container .logos {
+        flex-direction: column;
+
+        margin-top: 10rem;
+        align-items: center;
+    }
+
+    footer .container li {
+        padding: 0px;
+    }
+
+
+    footer .discount {
+        width: 70%;
+        margin: 0 auto;
+        position: absolute;
+        left: 15%;
+        top: -15%;
+    }
+
+    footer .discount .mail li {
+        flex-direction: column;
+    }
+
+    footer .discount .mail li button {
+        margin-top: .5rem;
+    }
+
+    footer .discount h3::after {
+        right: 10px;
+    }
+
+}
